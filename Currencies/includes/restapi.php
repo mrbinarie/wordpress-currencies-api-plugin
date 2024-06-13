@@ -95,6 +95,6 @@ function check_api_key_header($request, $subsidiary_slug) {
     if ($api_key === get_sub_option($subsidiary_slug)) {
         return true;
     } else {
-        return new WP_Error('invalid_api_key', 'Invalid API key' . "[$subsidiary_slug]", array('status' => 403));
+        return new WP_Error('invalid_api_key', 'Invalid API key', array('status' => 403));
     }
 }

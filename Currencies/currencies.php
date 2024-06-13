@@ -13,6 +13,8 @@ if (!defined('ABSPATH') ) {
 require_once plugin_dir_path( __FILE__ ) . 'includes/restapi.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/functions.php';
 
+require_once plugin_dir_path( __FILE__ ) . 'includes/shortcodes/shortcode-functions.php';
+
 if ( is_admin() ) {
     require_once plugin_dir_path( __FILE__ ) . 'admin/menus/admin-menu.php';
     require_once plugin_dir_path( __FILE__ ) . 'admin/settings/subsidiary-currencies-page.php';
